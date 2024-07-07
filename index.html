@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yummy</title>
+  <link rel="shortcut icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="lds-roller">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <aside class=" vh-100 d-flex position-fixed top-0 bottom-0 start-0">
+    <div class="sideBar-content d-flex flex-column justify-content-between text-white h-100">
+      <div class="sideBar-list overflow-hidden">
+        <ul class="list-unstyled ">
+          <li class="position-relative"><a id="search" href="#search">Search</a></li>
+          <li class="position-relative"><a id="categories" href="#categories">Categories</a></li>
+          <li class="position-relative"><a id="areas" href="#areas">Area</a></li>
+          <li class="position-relative"><a id="ingredients" href="#ingredients">Ingredients</a></li>
+          <li class="position-relative"><a id="contact" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="social-icon text-white">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-solid fa-globe"></i>
+          <p>Copyright Â© 2019 All Rights
+            Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="open-close-sideBar bg-white py-3 d-flex flex-column justify-content-between align-items-center">
+      <img src="assets/images/logo.png" class="w-75" alt="">
+      <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+      <div class="icons">
+        <i class="fa-solid fa-globe d-block"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </aside>
+  <section>
+    <div class="container search-section d-none">
+      <div class="row g-3 py-4">
+        <div class="col-md-6">
+          <input type="text" id="searchByName" placeholder="Search By Name"
+            class="form-control text-white bg-transparent">
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="searchByLetter" maxlength="1" placeholder="Search By First Letter"
+            class="form-control text-white bg-transparent">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="meals">
+    <div class="container">
+      <div class="inner-loading position-fixed top-0 bottom-0 start-0 end-0 justify-content-center align-items-center">
+        <i class="fa-solid fa-spinner fa-spin text-white fa-3x"></i>
+      </div>
+      <div class="row py-5 g-4 text-white">
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
